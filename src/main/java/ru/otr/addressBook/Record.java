@@ -12,7 +12,7 @@ public class Record {
     private List<String> phones = new ArrayList<>();
 
     public Record(String name) {
-        this.name = name;
+        setName(name);
     }
 
     public String getName() {
@@ -20,7 +20,9 @@ public class Record {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name==null)
+            name="";
+        this.name = name.trim();
     }
 
     public List<String> getPhones() {
