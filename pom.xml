@@ -19,7 +19,7 @@
     </dependencies>
 
     <build>
-        <finalName>ipaddress</finalName>
+        <finalName>addressbook</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

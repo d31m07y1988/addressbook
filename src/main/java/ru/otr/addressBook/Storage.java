@@ -26,6 +26,11 @@ public class Storage {
         addRecordToAddressBook(record3);
     }
 
+    //for Test
+    public Map<String, Record> getAddressBook() {
+        return addressBook;
+    }
+
     public boolean addRecordToAddressBook(Record record) {
         if (record == null) return false;
         if (addressBook.containsKey(record.getName())) {
